@@ -64,8 +64,8 @@
 
 		<section>
 			<h2>CIとは</h2>
-			<p class="fragment" align="left">・Continuous Integrationの略</p>
-			<p class="fragment" align="left">・継続的インテグレーションと呼ばれている</p>
+			<p class="fragment fade-up" align="left">・Continuous Integrationの略</p>
+			<p class="fragment fade-up" align="left">・継続的インテグレーションと呼ばれている</p>
 			<aside class="notes">
 				CIとは、Continuous Integrationの略で一般的には、継続的インテグレーションと呼ばれています
 			</aside>
@@ -86,10 +86,10 @@
 
 		<section>
 			<h2>CIのメリット</h2>
-			<p class="fragment" align="left">・開発者がローカル環境で見逃したコーディング規約違反やテストケース漏れを防ぐことができる</p>
-			<p class="fragment" align="left">・稼働時間の短縮につながる</p>
-			<p class="fragment" align="left">・手戻りの削減につながる</p>
-			<p class="fragment" align="left">・品質の維持につながる</p>
+			<p class="fragment fade-up" align="left">・開発者がローカル環境で見逃したコーディング規約違反やテストケース漏れを防ぐことができる</p>
+			<p class="fragment fade-up" align="left">・稼働時間の短縮につながる</p>
+			<p class="fragment fade-up" align="left">・手戻りの削減につながる</p>
+			<p class="fragment fade-up" align="left">・品質の維持につながる</p>
 
 			<aside class="notes">
 				CIのメリットとしては次のようなものが挙げられます。
@@ -149,9 +149,9 @@
 
 		<section id="fragments">
 			<h3>集合知がある</h3>
-			<p class="fragment" align="left">・プラグイン</p>
-			<p class="fragment" align="left">・参考書</p>
-			<p class="fragment" align="left">・ネットの情報</p>
+			<p class="fragment fade-up" align="left">・プラグイン</p>
+			<p class="fragment fade-up" align="left">・参考書</p>
+			<p class="fragment fade-up" align="left">・ネットの情報</p>
 
 			<aside class="notes">
 			Jenkinsには多くのプラグインが存在し、用途によって使用するプラグインを選択し自由にカスタマイズできるため汎用性が高いです。 +
@@ -159,29 +159,29 @@
 			</aside>
 		</section>
 
+
 		<section>
-			<section>
-				<h3>GUIで設定可能</h3>
-				<img src="./images/settings1.png" style="background:none; border:none; box-shadow:none;">
+			<h3>GUIで設定可能</h3>
 
-				<aside class="notes">
-					Jenkinsのタスクを実行するための設定(ジョブ)はGUIベースで行うことができ、誰でも簡単に設定することができます。 +
-					項目についての説明は省かせていただきますが、基本的には、設定したいものにチェックを入れ、チェックを入れると出てくる項目に +
-					設定内容を追加することで処理が適応されます
-				</aside>
-
-			</section>
-
-			<section>
-				<img src="./images/settings2.png" style="background:none; border:none; box-shadow:none;">
-			</section>
+			<aside class="notes">
+				Jenkinsのタスクを実行するための設定(ジョブ)はGUIベースで行うことができ、誰でも簡単に設定することができます。 +
+				項目についての説明は省かせていただきますが、基本的には、設定したいものにチェックを入れ、チェックを入れると出てくる項目に +
+				設定内容を追加することで処理が適応されます
+			</aside>
 
 		</section>
 
-		<section id="fragments">
-			<h3>定期実行可能</h3>
-			<img src="./images/execute_time.png" style="background:none; border:none; box-shadow:none;">
+		<section>
+			<img src="./images/settings1.png" style="background:none; border:none; box-shadow:none;">
+		</section>
 
+		<section>
+			<img src="./images/settings2.png" style="background:none; border:none; box-shadow:none;">
+		</section>
+
+
+		<section>
+			<h3>定期実行可能</h3>
 			<aside class="notes">
 				JenkinsはCronによってビルドの実行時間を設定することができます。これにより、毎日定期的に行うビルドに関しては、人の手で +
 				行う必要がなくなるため、ビルド忘れの防止や稼働時間の削減につながります。
@@ -189,23 +189,27 @@
 
 		</section>
 
-		<section id="fragments">
-			<section>
-				<h3>WebHookの設定が可能</h3>
+		<section>
+			<img src="./images/execute_time.png" style="background:none; border:none; box-shadow:none;">
+		</section>
 
-			</section>
 
-			<section>
-				<h4>WebHook</h4>
-				<img src="./images/webhook.png" style="background:none; border:none; box-shadow:none;">
 
-				<aside class="notes">
-					WebHookとは、簡単に説明するとAというアプリとBというアプリがあったときに、Aのアプリでイベントが発生したときに、Bのアプリに +
-					イベントが発生したことをリアルタイムで通知するようなことを言います。Jenkinsは、このWebHookの仕組みを利用することで、バージョン管理システムに対して変更が適応される度に、自動でビルドを実行
-					することが可能になります。
-				</aside>
+		<section>
+			<h3>WebHookの設定が可能</h3>
 
-			</section>
+		</section>
+
+		<section>
+			<h4>WebHook</h4>
+			<img src="./images/webhook.png" style="background:none; border:none; box-shadow:none;">
+
+			<aside class="notes">
+				WebHookとは、簡単に説明するとAというアプリとBというアプリがあったときに、Aのアプリでイベントが発生したときに、Bのアプリに +
+				イベントが発生したことをリアルタイムで通知するようなことを言います。Jenkinsは、このWebHookの仕組みを利用することで、バージョン管理システムに対して変更が適応される度に、自動でビルドを実行
+				することが可能になります。
+			</aside>
+
 		</section>
 
 		<section>
@@ -215,6 +219,10 @@
 				皆さん、そもそもGit利用していますか？ +
 				まだ、バージョン管理システムにSVNを利用していませんか？バージョン管理システムと言えば今はGitです。 +
 			</aside>
+		</section>
+
+		<section>
+			<img src="./images/compare_svn_git.png" style="background:none; border:none; box-shadow:none;">
 		</section>
 
 		<section>
@@ -248,8 +256,8 @@
 
 		<section>
 			<h3>SVNの悪い点</h3>
-			<p class="fragment" align="left">・バグの有無に関わらず、変更内容をコミットした時点で変更内容が取り込まれてしまう</p>
-			<p class="fragment" align="left">・レビューをするのに管理簿が必要</p>
+			<p class="fragment fade-up" align="left">・バグの有無に関わらず、変更内容をコミットした時点で変更内容が取り込まれてしまう</p>
+			<p class="fragment fade-up" align="left">・レビューをするのに管理簿が必要</p>
 
 
 			<aside class="notes">
@@ -282,7 +290,6 @@
 				<h2 >Git Flow</h2>
 				<img src="./images/git-flow.png" style="background:none; border:none; box-shadow:none;"><br>
 				<p><font size="4">参考「https://hackmd.io/p/BkSkUizJZ#/」</font></p>
-
 			</section>
 
 			<section>
@@ -293,7 +300,7 @@
 		</section>
 
 		<section>
-			<h2>ホスティングシステム</h2>
+			<h2>ホスティングサービス</h2>
 		</section>
 
 		<section>
@@ -309,17 +316,26 @@
 		<section>
 			<h2>Pull Request(Merge Request)</h2>
 			<aside class="notes">
-				作業ブランチを対象のブランチにマージするときに利用するのが、
+				GitHubやGitLabには、Pull Request(Merge Request)というものがあり、ブランチを対象のブランチにマージするときに利用します。
+				Pull Request(Merge Request)を利用することで、コードの変更点の確認とレビューのやり取りを一括で行うことができるようになります。
 			</aside>
 		</section>
 
 		<section>
+			GitHub(GitLab)の機能であり、作業ブランチを対象のブランチにマージするときに利用する
+		</section>
+
+		<section>
+			コードの変更点の確認とレビューのやり取りを<br>まとめて行うことができる
+		</section>
+
+		<section>
 			<section>
-				<img src="./images/pull_request.png" style="background:none; border:none; box-shadow:none;">
+				<img src="./images/pull_request1.png" style="background:none; border:none; box-shadow:none;">
 			</section>
 
 			<section>
-				<img src="./images/pull_request1.png" style="background:none; border:none; box-shadow:none;">
+				<img src="./images/pull_request.png" style="background:none; border:none; box-shadow:none;">
 			</section>
 
 			<section>
@@ -347,8 +363,11 @@
 		</section>
 
 		<section>
-			Groovyで書くことができるDSLのこと
+			Groovyで書くことができるDSL
 		</section>
+
+
+
 
 		<section>
 			<section>
@@ -357,16 +376,16 @@
 
 			<section>
 				ビルド結果を通知する
-				<p class="fragment" align="left">・MattermostやSlackなどのチャットツール</p>
-				<p class="fragment" align="left">・メール</p>
-				<p class="fragment" align="left">・Jenkinsのアプリ</p>
+				<p class="fragment fade-up" align="left">・MattermostやSlackなどのチャットツール</p>
+				<p class="fragment fade-up" align="left">・メール</p>
+				<p class="fragment fade-up" align="left">・Jenkinsのアプリ</p>
 			</section>
 
 			<section>
 				Jenkinsfileにビルドスクリプトを記述する
-				<p class="fragment" align="left">・GUIでの操作が減る</p>
-				<p class="fragment" align="left">・設定をファイルで管理可能</p>
-				<p class="fragment" align="left">・設定をファイルで管理可能</p>
+				<p class="fragment fade-up" align="left">・GUIでの操作が減る</p>
+				<p class="fragment fade-up" align="left">・設定をファイルで管理可能</p>
+				<p class="fragment fade-up" align="left">・設定をファイルで管理可能</p>
 
 			</section>
 
@@ -384,14 +403,14 @@
 		</section>
 
 		<section id="fragments">
-			<p class="fragment" align="left">・コミュニケーションツール(mattermost,slack)</p>
-			<p class="fragment" align="left">・バージョン管理ツール(GitLabやGitHub,SVN）</p>
-			<p class="fragment" align="left">・ビルドツール(Gradle、Maven)</p>
-			<p class="fragment" align="left">・テストツール(Junit、Spock)</p>
-			<p class="fragment" align="left">・カバレッジツール(jacoco)</p>
-			<p class="fragment" align="left">・静的解析ツール(CheckStyle、FindBugs、PMD)</p>
-			<p class="fragment" align="left">・メトリクスツール(SonarQube) </p>
-			<p class="fragment" align="left">・ライブラリ管理ツール（Nexus、Artifacroty）</p>
+			<p class="fragment fade-up" align="left">・コミュニケーションツール(mattermost,slack)</p>
+			<p class="fragment fade-up" align="left">・バージョン管理ツール(GitLabやGitHub,SVN）</p>
+			<p class="fragment fade-up" align="left">・ビルドツール(Gradle、Maven)</p>
+			<p class="fragment fade-up" align="left">・テストツール(Junit、Spock)</p>
+			<p class="fragment fade-up" align="left">・カバレッジツール(jacoco)</p>
+			<p class="fragment fade-up" align="left">・静的解析ツール(CheckStyle、FindBugs、PMD)</p>
+			<p class="fragment fade-up" align="left">・メトリクスツール(SonarQube) </p>
+			<p class="fragment fade-up" align="left">・ライブラリ管理ツール（Nexus、Artifacroty）</p>
 			<aside class="notes">
 				今いるプロジェクトの次のようなものを利用しています。
 			</aside>
@@ -405,11 +424,6 @@
 		<section>
 			<img src="./images/build_pipeline.png" style="background:none; border:none; box-shadow:none;">
 		</section>
-
-		<section>
-			<h2>参考資料</h2>
-		</section>
-
 	</div>
 </div>
 
