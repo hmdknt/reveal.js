@@ -164,7 +164,7 @@
 			<h3>GUIで設定可能</h3>
 
 			<aside class="notes">
-				Jenkinsのタスクを実行するための設定(ジョブ)はGUIベースで行うことができ、誰でも簡単に設定することができます。 +
+				Jenkinsで実行させる一連の処理(ジョブ)のはGUIベースで行うことができ、誰でも簡単に設定することができます。 +
 				項目についての説明は省かせていただきますが、基本的には、設定したいものにチェックを入れ、チェックを入れると出てくる項目に +
 				設定内容を追加することで処理が適応されます
 			</aside>
@@ -188,6 +188,12 @@
 			</aside>
 
 		</section>
+
+
+		<section>
+			<span style="color:red">cron</span>の書式で設定可能
+		</section>
+
 
 		<section>
 			<img src="./images/execute_time.png" style="background:none; border:none; box-shadow:none;">
@@ -251,12 +257,21 @@
 		</section>
 
 		<section>
+			trunk、branches、tagsの3つのディレクトリ構成
+		</section>
+
+		<section>
+			<img src="./images/svn-branch.png" style="background:none; border:none; box-shadow:none;"><br>
+			<p><font size="4">参考「http://blog.luiscoms.com.br/php/utilizacao-de-trunk-branch-e-tag-no-svn.lcs」</font></p>
+		</section>
+
+		<section>
 			<h3>SVNのどこかダメなの？</h3>
 		</section>
 
 		<section>
 			<h3>SVNの悪い点</h3>
-			<p class="fragment fade-up" align="left">・バグの有無に関わらず、変更内容をコミットした時点で変更内容が取り込まれてしまう</p>
+			<p class="fragment fade-up" align="left">・バグの有無に関わらず、変更内容をコミットした時点で変更内容が取り込まれる</p>
 			<p class="fragment fade-up" align="left">・レビューをするのに管理簿が必要</p>
 
 
@@ -281,22 +296,46 @@
 		</section>
 
 		<section>
+			<h2>ブランチ</h2>
+		</section>
+
+		<section>
+			開発者がそれぞれブランチを切り開発を行う
+		</section>
+
+		<section>
+			<img src="./images/git-branch.png" style="background:none; border:none; box-shadow:none;"><br>
+		</section>
+
+		<section>
+			<h3>ブランチのメリット</h3>
+			<p class="fragment fade-up" align="left">・他の開発者の作業の影響を受けることなく、複数の作業を同時に進められる</p>
+			<aside class="notes">
+
+			</aside>
+
+
+			<p class="fragment fade-up" align="left">・ブランチ単位で変更内容を管理できるため、問題発生時の調査が容易</p>
+			<aside class="notes">
+
+			</aside>
+
+		</section>
+
+		<section>
 			<h2>ブランチ戦略</h2>
 		</section>
 
 		<section>
+			<h2 >Git Flow</h2>
+			<img src="./images/git-flow.png" style="background:none; border:none; box-shadow:none;"><br>
+			<p><font size="4">参考「https://hackmd.io/p/BkSkUizJZ#/」</font></p>
+		</section>
 
-			<section>
-				<h2 >Git Flow</h2>
-				<img src="./images/git-flow.png" style="background:none; border:none; box-shadow:none;"><br>
-				<p><font size="4">参考「https://hackmd.io/p/BkSkUizJZ#/」</font></p>
-			</section>
-
-			<section>
-				<h2>GitHub Flow</h2>
-				<img src="./images/github-flow.png" style="background:none; border:none; box-shadow:none;"><br>
-				<p><font size="4">参考「http://mateuszmistecki.pl/2017/03/27/github-flow/」</font></p>
-			</section>
+		<section>
+			<h2>GitHub Flow</h2>
+			<img src="./images/github-flow.png" style="background:none; border:none; box-shadow:none;"><br>
+			<p><font size="4">参考「http://mateuszmistecki.pl/2017/03/27/github-flow/」</font></p>
 		</section>
 
 		<section>
@@ -304,13 +343,11 @@
 		</section>
 
 		<section>
-			<section>
-				<img src="./images/github.png" style="background:none; border:none; box-shadow:none;">
-			</section>
+			<img src="./images/github.png" style="background:none; border:none; box-shadow:none;">
+		</section>
 
-			<section>
-				<img src="./images/Gitlab.png" style="background:none; border:none; box-shadow:none;">
-			</section>
+		<section>
+			<img src="./images/Gitlab.png" style="background:none; border:none; box-shadow:none;">
 		</section>
 
 		<section>
@@ -322,7 +359,7 @@
 		</section>
 
 		<section>
-			GitHub(GitLab)の機能であり、作業ブランチを対象のブランチにマージするときに利用する
+			作業ブランチを対象のブランチにマージするときに利用する
 		</section>
 
 		<section>
@@ -330,32 +367,43 @@
 		</section>
 
 		<section>
-			<section>
-				<img src="./images/pull_request1.png" style="background:none; border:none; box-shadow:none;">
-			</section>
-
-			<section>
-				<img src="./images/pull_request.png" style="background:none; border:none; box-shadow:none;">
-			</section>
-
-			<section>
-				<img src="./images/pull_request2.png" style="background:none; border:none; box-shadow:none;">
-			</section>
-
+			<img src="./images/pullrequest1.png" style="background:none; border:none; box-shadow:none;">
 		</section>
+
+		<section>
+			<img src="./images/pullrequest2.png" style="background:none; border:none; box-shadow:none;">
+		</section>
+
+		<section>
+			<img src="./images/pullrequest3.png" style="background:none; border:none; box-shadow:none;">
+		</section>
+
+		<section>
+			<img src="./images/pullrequest4.png" style="background:none; border:none; box-shadow:none;">
+		</section>
+
+		<section>
+			<section>
+				<img src="./images/pullrequest9.png" style="background:none; border:none; box-shadow:none;">
+			</section>
+
+			<section>
+				<img src="./images/pullrequest10.png" style="background:none; border:none; box-shadow:none;">
+			</section>
+		</section>
+
 
 
 		<section>
 			<h2>Jenkins2.0</h2>
 		</section>
 
-
 		<section>
 			<h3>何が変わったの？</h3>
 		</section>
 
 		<section>
-			<h3>Jenkinsfileが追加された</h3>
+			<h3><span style="color:red">Jenkinsfile</span>が追加された</h3>
 		</section>
 
 		<section>
@@ -366,36 +414,25 @@
 			Groovyで書くことができるDSL
 		</section>
 
-
-
+		<section>
+			<h4>Jenkinsfileが追加されて何が嬉しいの？</h4>
+		</section>
 
 		<section>
-			<section>
-				<h3>プロジェクトにおけるJenkinsの活用例</h3>
-			</section>
+			<h3>Jenkinfileのメリット</h3>
+			<p class="fragment fade-up" align="left">・設定ミスや設定漏れをなくすことができる</p>
+			<p class="fragment fade-up" align="left">・設定変更の管理がしやすい</p>
+			<p class="fragment fade-up" align="left">・Gitとの相性が良区なった</p>
+		</section>
 
-			<section>
-				ビルド結果を通知する
-				<p class="fragment fade-up" align="left">・MattermostやSlackなどのチャットツール</p>
-				<p class="fragment fade-up" align="left">・メール</p>
-				<p class="fragment fade-up" align="left">・Jenkinsのアプリ</p>
-			</section>
+		<section>
+			<h3>Jenkinsfileにはデメリットもある</h3>
+		</section>
 
-			<section>
-				Jenkinsfileにビルドスクリプトを記述する
-				<p class="fragment fade-up" align="left">・GUIでの操作が減る</p>
-				<p class="fragment fade-up" align="left">・設定をファイルで管理可能</p>
-				<p class="fragment fade-up" align="left">・設定をファイルで管理可能</p>
-
-			</section>
-
-			<section>
-				プラグインを利用する
-			</section>
-
-			<section>
-
-			</section>
+		<section>
+			Jenkinsfileのデメリット
+			<p class="fragment fade-up" align="left">・Groovyを覚える必要がある</p>
+			<p class="fragment fade-up" align="left">・属人性が高い</p>
 		</section>
 
 		<section>
@@ -414,7 +451,6 @@
 			<aside class="notes">
 				今いるプロジェクトの次のようなものを利用しています。
 			</aside>
-
 		</section>
 
 		<section>
