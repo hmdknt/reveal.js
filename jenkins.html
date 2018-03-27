@@ -82,6 +82,14 @@
 			</aside>
 		</section>
 
+        <section>
+            <img src="./images/deploy.png" style="background:none; border:none; box-shadow:none;">
+        </section>
+
+        <section>
+            <img src="./images/deploy1.png" style="background:none; border:none; box-shadow:none;">
+        </section>
+
 		<section>
 			<h2>CIのメリットって？</h2>
 		</section>
@@ -161,6 +169,18 @@
 			</aside>
 		</section>
 
+        <section>
+            <h4>CIツールの利用率</h4>
+            <img src="./images/ci-usage-rate.png" style="background:none; border:none; box-shadow:none;"><br>
+            <p><font size="4">参考「https://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-2016/」</font></p>
+
+            <aside class="notes">
+                Zero TurnAround社が発表した2016年のCIツールの利用率を見たときに、Jenkinsの利用率は60%もあり、他のCIツールと比べた時に
+                ネットに多くの情報が転がっていることが言えると思います。
+            </aside>
+
+        </section>
+
 
 		<section>
 			<h3>GUIで設定可能</h3>
@@ -222,15 +242,17 @@
 
 		</section>
 
+        <section>
+            <h3>バージョン管理システム</h3>
+            <aside class="notes">
+                CIツールを利用する上で欠かせないのは、バージョン管理システムです。
+                バージョン管理システムにはSVNやGitなどがあると思います。
+            </aside>
+        </section>
 
-		<section>
-			<h3>Git使ってますか？</h3>
-			<aside class="notes">
-				ここで、Gitについて説明したいと思います。 +
-				皆さん、そもそもGit利用していますか？ +
-				まだ、バージョン管理システムにSVNを利用していませんか？バージョン管理システムと言えば今はGitです。 +
-			</aside>
-		</section>
+        <section>
+            <img src="./images/vcs.png" style="background:none; border:none; box-shadow:none;">
+        </section>
 
 		<section>
 			<img src="./images/compare_svn_git.png" style="background:none; border:none; box-shadow:none;">
@@ -258,7 +280,7 @@
 		</section>
 
 		<section>
-			<h3>SVN</h3>
+			<h2>SVN</h2>
 		</section>
 
 		<section>
@@ -310,20 +332,22 @@
 
 		<section>
 			<img src="./images/git-branch.png" style="background:none; border:none; box-shadow:none;"><br>
+            <aside class="notes">
+                基本的にGitはブランチを切り、ブランチで作業を行い、作業が完了したら対象のブランチへマージするという流れで変更内容を取り込みます。
+            </aside>
 		</section>
 
 		<section>
 			<h3>ブランチのメリット</h3>
 			<p class="fragment fade-up" align="left">・他の開発者の作業の影響を受けることなく、複数の作業を並行して進められる</p>
 			<aside class="notes">
-
+                ブランチを切ることで、完全に独立した環境で開発を行うことができるため、他の開発者の作業の影響を受けることなく、複数の作業を並行して行うことができます
 			</aside>
-
 
 			<p class="fragment fade-up" align="left">・ブランチ単位で変更内容を管理できるため、問題発生時の調査が容易</p>
 			<aside class="notes">
-
-			</aside>
+                ブランチ単位で変更内容を管理できるため、どのブランチを取り込んだ時点で問題が発生したのかを
+            </aside>
 
 		</section>
 
@@ -345,7 +369,11 @@
 
 		<section>
 			<h2>ホスティングサービス</h2>
-		</section>
+            <aside class="notes">
+                Gitには、GitHubやGitLabといったホスティングシステムがあり、これらを利用することで
+            </aside>
+
+        </section>
 
 		<section>
 			<img src="./images/github.png" style="background:none; border:none; box-shadow:none;">
@@ -447,7 +475,6 @@
 		<section>
         	Gitを利用したレビューができる
 		</section>
-
 
 		<section>
 			<h4>Gitとの相性が良い</h4>
