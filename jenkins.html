@@ -452,33 +452,35 @@
 		</section>
 
 		<section>
-			<h4>設定ミスや設定漏れをなくすことができる</h4>
+			<h3>設定ミスや設定漏れをなくすことができる</h3>
+            <aside class="notes">
+                Jenkins1系では、ジョブを作成する毎にGUIで設定を1からする必要がありましたが、Jenkinsfileの登場により、同一設定であれば同じJenkinsfileを
+                利用すれば再度設定をする必要がないため、設定ミスや設定漏れが起こることがありません。
+            </aside>
 		</section>
 
 		<section>
-            Jenkins1系では、ジョブ毎に設定を1からする必要があった
+			<h3>設定変更が容易になった</h3>
+            <aside class="notes">
+                設定変更がファイルで行えるようになったため、Jenkinsにログインする必要がなくなり、ローカル環境で設定変更を行うことができるようになった
+            </aside>
 		</section>
 
 		<section>
-			<h4>設定変更が容易になった</h4>
+			<h3>レビューが容易になった</h3>
+            <aside class="notes">
+                ファイルによる設定が可能となったため、先ほどGitのメリットで説明した、Pull Requestの機能を利用してコードの差分に対してレビューを行うことができます。
+            </aside>
 		</section>
 
-		<section>
-            <p>Jenkinsfileを編集すれば設定を変更できる</p>
-            <p align="left">　　→Jenkinsを開く必要がない</p>
-		</section>
 
 		<section>
-			<h4>レビューが容易になった</h4>
+			<h3>Gitとの相性が良い</h3>
 		</section>
 
-		<section>
-        	Gitを利用したレビューができる
-		</section>
-
-		<section>
-			<h4>Gitとの相性が良い</h4>
-		</section>
+        <section>
+            
+        </section>
 
 		<section>
 			<h3>Jenkinsfileにはデメリットもある</h3>
@@ -491,7 +493,7 @@
 
 			<aside class="notes">
 				Jenkinsfileが書けることとGroovyが読み書きできることはほぼ等しいため、Groovyを覚える必要があります。
-
+                また、
 			</aside>
 		</section>
 
@@ -517,11 +519,15 @@
 			<h3>ビルドパイプラインの紹介</h3>
 		</section>
 
-
-
 		<section>
 			<img src="./images/buildpipeline.png" style="background:none; border:none; box-shadow:none;">
 		</section>
+
+
+        <section>
+            <h2>まとめ</h2>
+        </section>
+
 	</div>
 </div>
 
