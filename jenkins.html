@@ -443,6 +443,9 @@
 
 		<section>
 			Groovyで書くことができるDSL
+			<aside class="notes">
+				domain-specific languageの略でJenkinsで利用できる固有の言語です。
+			</aside>
 		</section>
 
 		<section>
@@ -459,9 +462,9 @@
 
 
 		<section>
-			<h3>設定ミスや設定漏れをなくすことができる</h3>
+			設定済みのファイルを利用すれば、ジョブを作成する度にGUIで設定を行う必要がない
             <aside class="notes">
-                Jenkins1系では、ジョブを作成する毎にGUIで設定を1からする必要がありましたが、Jenkinsfileの登場により、同一設定であれば同じJenkinsfileを
+                Jenkins1系では、同じ設定であってもジョブを作成する毎にGUIで設定を1からする必要がありましたが、Jenkinsfileの登場により、設定済みのJenkinsfileを
                 利用すれば再度設定をする必要がないため、設定ミスや設定漏れが起こることがありません。
             </aside>
 		</section>
@@ -475,7 +478,7 @@
 		</section>
 
 		<section>
-			<h3>設定変更が容易になった</h3>
+			ローカル環境で設定の変更を行うことができる
             <aside class="notes">
                 設定変更がファイルで行えるようになったため、Jenkinsにログインする必要がなくなり、ローカル環境で設定変更を行うことができるようになった
             </aside>
@@ -490,9 +493,10 @@
 		</section>
 
 		<section>
-			<h3>レビューが容易になった</h3>
+			Pull Request機能を利用したレビューを行うことができる
             <aside class="notes">
                 ファイルによる設定が可能となったため、先ほどGitのメリットで説明した、Pull Requestの機能を利用してコードの差分に対してレビューを行うことができます。
+		    GUIは便利でありますが、
             </aside>
 		</section>
 
@@ -505,12 +509,12 @@
 		</section>
 
 		<section>
-			<h3>Gitとの相性が良い</h3>
+		Multibranch Pipeline機能を使うことでブランチごとにジョブを作成する必要がない
+		<aside class="notes">
+                Jenkins1だとブランチを作成する度にジョブをGUIで設定する必要であり、、ブランチの数が増えた時に対応出来なくなるという問題があったが、
+			Multibranch Pipelineの機能を使うことでジョブの設定はJenkinsfileが1つのあれば
+            </aside>
 		</section>
-
-        <section>
-
-        </section>
 
 		<section>
 			<h3>Jenkinsfileにはデメリットもある</h3>
@@ -527,24 +531,7 @@
 			</aside>
 		</section>
 
-		<section>
-			<h3>プロジェクト構成</h3>
-		</section>
-
-		<section id="fragments">
-			<p class="fragment fade-up" align="left">・コミュニケーションツール(mattermost)</p>
-			<p class="fragment fade-up" align="left">・バージョン管理ツール(GitLab）</p>
-			<p class="fragment fade-up" align="left">・ビルドツール(Gradle)</p>
-			<p class="fragment fade-up" align="left">・テストツール(Junit)</p>
-			<p class="fragment fade-up" align="left">・カバレッジツール(jacoco)</p>
-			<p class="fragment fade-up" align="left">・静的解析ツール(CheckStyle、FindBugs)</p>
-			<p class="fragment fade-up" align="left">・メトリクスツール(SonarQube) </p>
-			<p class="fragment fade-up" align="left">・ライブラリ管理ツール（Nexus）</p>
-			<aside class="notes">
-				今いるプロジェクトでは、次のようなものを利用しています。
-			</aside>
-		</section>
-
+	
 		<section>
 			<h3>ビルドパイプラインの紹介</h3>
 		</section>
@@ -558,7 +545,17 @@
             <h2>まとめ</h2>
         </section>
 
-        <section></section>
+        <section>
+			<h3>まとめ</h3>
+			<p class="fragment fade-up" align="left">・CIを回すことで、手戻りの削減や開発者の確認漏れを防ぐことが出来る</p>
+			<p class="fragment fade-up" align="left">・JenkinsはCIを回すためのツールの1つである</p>
+			<p class="fragment fade-up" align="left">・学習コストは高いがSVNよりもGitの方が便利</p>
+			<p class="fragment fade-up" align="left">・Jenkinsジョブの設定はGUIではなくJenkinsfileを利用するとGitの恩恵が受ける</p>
+			<aside class="notes">
+				Jenkinsfileが書けることとGroovyが読み書きできることはほぼ等しいため、Groovyを覚える必要があります。
+				また、
+			</aside>
+	</section>
 
 	</div>
 </div>
